@@ -23,14 +23,14 @@
             android:scaleType="centerCrop"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@drawable/borderlands"
+            tools:srcCompat="@drawable/emma"
             android:background="@color/colorPrimary"/>
 
         <ImageButton
             android:id="@+id/game_button"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/gardient_black"
+            android:background="@drawable/gardient_violet"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -45,7 +45,7 @@
             android:id="@+id/circle_black_left"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:background="@drawable/circle_black"
+            android:background="@drawable/circle_violet"
             app:layout_constraintLeft_toLeftOf="@id/spacer"
             app:layout_constraintTop_toTopOf="@id/spacer"
             android:focusable="true"
@@ -79,6 +79,30 @@
                 app:layout_constraintBottom_toBottomOf="parent"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/star"
+            app:layout_constraintLeft_toLeftOf="@id/rating_textview"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/rating_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="5dp"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/title_textview"
+            app:layout_constraintRight_toRightOf="@id/title_textview"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="4.5/5" />
+
         <TextView
             android:id="@+id/title_textview"
             android:layout_width="wrap_content"
@@ -92,18 +116,19 @@
             app:layout_constraintBottom_toTopOf="@id/description_textview"
             app:layout_constraintRight_toRightOf="@id/description_textview"
             app:layout_constraintVertical_chainStyle="packed"
-            tools:text="Borderlands 3" />
+            tools:text="The promised Neverland" />
 
         <TextView
             android:id="@+id/description_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
+            android:padding="10dp"
             android:textColor="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            tools:text="260h de jeu - Installé le 02/02/18" />
+            android:textSize="10sp"
+            tools:text="The Promised Neverland est un shōnen manga écrit par Kaiu Shirai et dessiné par Posuka Demizu, prépublié entre août 2016 et juin 2020 dans le magazine Weekly Shōnen Jump de l'éditeur Shūeisha." />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>
